@@ -37,7 +37,7 @@ export const projectNameRules = (msg) => {
 export const descriptionRules = (msg) => {
   return [
     v => !!v || msg.descriptionRequired,
-    v => (v && v.length <= 100) || msg.descriptionLessThan30Chars
+    v => (v && v.length <= 1000000) || msg.descriptionLessThan30Chars
   ]
 }
 
